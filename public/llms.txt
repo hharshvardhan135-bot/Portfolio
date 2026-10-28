@@ -1,0 +1,14 @@
+# Harshvardhan Sinha
+
+> Final-year Computer Science student and Software Developer Intern in Delhi, India. Open to software engineering, backend, and full-stack internship and entry-level roles.
+
+## Profile
+- [Recruiter brief](/brief): concise text-first professional profile
+- [Markdown profile](/ai-profile.md): plain text profile
+- [Résumé](/resume.pdf): PDF download
+- [Portfolio](/): experience, skills, education, and contact
+
+## Contact
+- Email: hharshvardhan135@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/harshvardhan-sinha-6b153b373)
+- [LeetCode](https://leetcode.com/u/deluluCode)
