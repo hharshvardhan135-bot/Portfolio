@@ -31,8 +31,7 @@ export default function MotionRuntime({ scope }: { scope: React.RefObject<HTMLDi
     media.add("(prefers-reduced-motion: no-preference)", () => {
       const intro = gsap.timeline({ id: "portfolio-intro" });
       intro
-        .fromTo(".hero-line-inner", { y: 6 }, { y: 0, stagger: 0.09, duration: 0.75, ease: "power2.out" })
-        .fromTo(".hero-subtitle", { y: 16, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.65 }, "-=0.45")
+        .fromTo(".hero-subtitle", { y: 16, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.65 })
         .fromTo(".hero-actions > *", { y: 12, autoAlpha: 0 }, { y: 0, autoAlpha: 1, stagger: 0.08, duration: 0.5 }, "-=0.38")
         .fromTo(".hero-art img", { scale: 1.07, autoAlpha: 0.55 }, { scale: 1, autoAlpha: 1, duration: 1.25 }, "-=1.05")
         .fromTo(".hero-art .hud", { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, stagger: 0.12, duration: 0.55 }, "-=0.75");

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import RoleMatch from "@/components/role-match";
-import TiltedSkills from "@/components/tilted-skills";
+import SkillsUniverse from "@/components/skills-universe";
+import ContactForm from "@/components/contact-form";
 import { profile as p } from "@/content/profile";
 
 const nav = [
@@ -62,9 +63,6 @@ export default function Home() {
                     download
                   >
                     Download résumé
-                  </a>
-                  <a className="text-link" href="#contact-footer">
-                    Get in touch
                   </a>
                 </div>
               </div>
@@ -172,7 +170,7 @@ export default function Home() {
               and the fundamentals I bring to the work.
             </p>
           </div>
-          <TiltedSkills />
+          <SkillsUniverse />
         </section>
 
         <RoleMatch />
@@ -334,14 +332,7 @@ export default function Home() {
                 I’m looking forward to learning, contributing, and growing with
                 a team that cares about doing thoughtful work.
               </p>
-              <a
-                className="button button-primary"
-                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(p.email)}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Start a conversation <span>↗</span>
-              </a>
+              <ContactForm email={p.email} />
             </div>
           </div>
           <div className="contact-links">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MotionLoader from "@/components/motion-loader";
+import SiteEntry from "@/components/site-entry";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import "../styles/globals.scss";
 import "../styles/motion.scss";
@@ -73,23 +74,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="cosmos-meteors" aria-hidden="true">
-          <span className="meteor meteor-one" />
-          <span className="meteor meteor-two" />
-          <span className="meteor meteor-three" />
-          <span className="meteor meteor-four" />
-        </div>
-        <SmoothCursor />
-        <MotionLoader>
-          <a className="skip-link" href="#main">
-            Skip to content
-          </a>
-          {children}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-          />
-        </MotionLoader>
+        <SiteEntry>
+          <div className="cosmos-meteors" aria-hidden="true">
+            <span className="meteor meteor-one" />
+            <span className="meteor meteor-two" />
+            <span className="meteor meteor-three" />
+            <span className="meteor meteor-four" />
+          </div>
+          <SmoothCursor />
+          <MotionLoader>
+            <a className="skip-link" href="#main">
+              Skip to content
+            </a>
+            {children}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
+          </MotionLoader>
+        </SiteEntry>
       </body>
     </html>
   );
